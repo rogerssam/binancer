@@ -14,7 +14,7 @@ binance_coins_prices()
 Getting data on a specific symbol pair, e.g. the most recent Bitcoin/USDT changes:
 
 ```r
-(klines <- binance_klines('BTCUSDT', interval = '1m'))
+(klines <- binance_klines('BTCAUD', interval = '1d'))
 ```
 
 Visualize this data, e.g. on a simple line chart:
