@@ -1,8 +1,8 @@
 pandoc: 2.7.3
-pkgdown: 1.6.1
+pkgdown: 2.0.2
 pkgdown_sha: ~
 articles: {}
-last_built: 2021-11-29T08:56Z
+last_built: 2022-03-08T23:48Z
 urls:
   reference: https://daroczig.github.io/binancer/reference
   article: https://daroczig.github.io/binancer/articles
