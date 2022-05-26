@@ -2,7 +2,7 @@
 #' @return milliseconds since Jan 1, 1970
 #' @keywords internal
 timestamp <- function() {
-    as.character(round(as.numeric(Sys.time()) * 1e3))
+    as.character(round(as.numeric(Sys.time()-2) * 1e3))
 }
 
 
