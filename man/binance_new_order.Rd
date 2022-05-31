@@ -11,6 +11,7 @@ binance_new_order(
     "TAKE_PROFIT_LIMIT", "LIMIT_MAKER"),
   time_in_force = c("GTC", "IOC", "FOK"),
   quantity,
+  quote_order_qty,
   price,
   stop_price,
   iceberg_qty,
@@ -26,7 +27,9 @@ binance_new_order(
 
 \item{time_in_force}{optional enum}
 
-\item{quantity}{number}
+\item{quantity}{number The quantity of the base asset to trade. See details for an example.}
+
+\item{quote_order_qty}{number The quantity of the quote asset to trade. See details for an example.}
 
 \item{price}{optional number}
 
@@ -42,10 +45,14 @@ data.table
 \description{
 Open new order on the Binance account
 }
+\details{
+If trading `BTCUSDT` for example using `quantity` allows specification of the quantity of `BTC` of the trade, while `quote_order_qty` allows specification of the USDT value of the trade.
+}
 \examples{
 \dontrun{
 binance_new_order('ARKETH', side = 'BUY', type = 'MARKET', quantity = 1)
 binance_new_order('ARKBTC', side = 'BUY', type = 'LIMIT', quantity = 1,
                   price = 0.5, time_in_force = 'GTC')
 }
+
 }

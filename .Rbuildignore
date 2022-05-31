@@ -6,3 +6,4 @@
 ^\.github$
 .backup
 .*\.sh$
+trading.R
