@@ -7,3 +7,5 @@
 .backup
 .*\.sh$
 trading.R
+^\.positai$
+^\.claude$

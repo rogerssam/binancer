@@ -2,3 +2,6 @@ local.R
 docs
 .Rproj.user
 *.Rproj
+.positai
+.RData
+.Rhistory
